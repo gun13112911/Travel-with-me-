@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>yaan Lyon — My World Travel Journey</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph for link preview -->
+<meta property="og:title" content="🌍 yaan Lyon">
+<meta property="og:image" content="am.jpg">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:type" content="website">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+body{background:linear-gradient(180deg,#ade8ff,#e0f7ff);color:#0072ff;overflow-x:hidden;}
+
+/* Floating planes */
+.floating-plane{position:absolute;width:60px;animation:fly 15s linear infinite;}
+@keyframes fly{0%{transform:translateX(-100px);}50%{transform:translateX(100vw) translateY(-50px);}100%{transform:translateX(200vw);}}
+
+/* Header */
+header{height:350px;background:url('am.jpg') no-repeat center/cover;border-radius:0 0 40px 40px;position:relative;
+display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;}
+header::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.35);}
+.logo{font-size:3em;font-weight:700;color:#fff;z-index:2;text-shadow:0 0 10px #000;}
+header p{color:#fff;z-index:2;margin-top:10px;font-size:1.2em;}
+
+/* Sections */
+section{width:92%;margin:35px auto;padding:38px 20px;background:#fff;border-radius:24px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);text-align:center;color:#0072ff;}
+section h2{font-size:1.9em;margin-bottom:20px;}
+section h2::after{content:'';width:80px;height:4px;background:linear-gradient(90deg,#00c6ff,#0072ff);
+display:block;margin:10px auto;border-radius:2px;}
+
+/* Buttons */
+.btn{padding:12px 30px;border-radius:45px;background:linear-gradient(45deg,#0072ff,#00c6ff);
+color:white;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block;margin-top:16px;}
+.btn:hover{transform:scale(1.05);}
+
+/* Donation */
+.donation-box img{width:230px;margin-top:20px;border-radius:14px;box-shadow:0 0 30px rgba(0,0,0,0.35);}
+
+/* Gallery */
+#gallerySection{display:none;}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:20px;}
+.gallery-grid img{width:100%;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.25);transition:0.4s;cursor:pointer;}
+.gallery-grid img:hover{transform:scale(1.12) rotate(-1deg);}
+
+/* Social */
+.social-box{text-align:center;margin:35px 0;}
+.social-icons{font-size:40px;display:flex;justify-content:center;gap:28px;}
+
+/* Footer */
+footer{background:#0072ff;color:#fff;text-align:center;padding:16px;margin-top:40px;font-weight:500;}
+.language-select{margin:20px auto;text-align:center;}
+select{padding:10px 18px;border-radius:10px;border:2px solid #0072ff;font-weight:600;}
+</style>
+</head>
+
+<body>
+
+<!-- Floating Planes -->
+<img src="plane.png" class="floating-plane" style="top:60px; left:-120px;">
+<img src="plane.png" class="floating-plane" style="top:140px; left:-200px; animation-duration:18s;">
+
+<header>
+  <h1 class="logo" data-text>🌍 yaan Lyon</h1>
+  <p data-text>Life is short… we may not reach other planets but we can explore Earth</p>
+</header>
+
+<!-- Language Selector -->
+<div class="language-select">
+  <select id="lang">
+    <option value="en">Select Language</option>
+    <option value="hi">Hindi</option>
+    <option value="ur">Urdu</option>
+    <option value="gu">Gujarati</option>
+    <option value="mr">Marathi</option>
+    <option value="bn">Bengali</option>
+    <option value="pa">Punjabi</option>
+    <option value="ta">Tamil</option>
+    <option value="te">Telugu</option>
+    <option value="kn">Kannada</option>
+    <option value="ml">Malayalam</option>
+    <option value="ne">Nepali</option>
+    <option value="ar">Arabic</option>
+    <option value="zh-CN">Chinese</option>
+    <option value="ja">Japanese</option>
+    <option value="ko">Korean</option>
+    <option value="es">Spanish</option>
+    <option value="fr">French</option>
+    <option value="de">German</option>
+    <option value="ru">Russian</option>
+  </select>
+</div>
+
+<section data-text="about-title">
+  <h2 data-text>🌎 My Story</h2>
+  <p data-text>
+Life is way too short… otherwise the dream is to wander till the Moon Mars Jupiter the rings of Saturn and even Neptune
+But until the day mankind reaches other planets I thought  why not explore our beautiful Earth first
+
+For me traveling isn’t just moving from one place to another
+it’s about learning something new from every city every face every culture
+
+I don’t want to sleep in five-star hotels
+I want to live among real people and understand the world the way they live it
+
+And I don’t want to begin this journey alone
+I want to start it with people with connections and with a strong community
+
+That’s why this is an invitation for all of you
+not just to support me
+but to become a real part of this journey🌎 ✨ </p>
+</section>
+
+<section>
+  <h2 data-text>🎥 My YouTube Channel</h2>
+  <p data-text>Very soon I’ll be starting my YouTube channel
+and every trip every city  every story
+I’ll share with all of you
+
+So that this journey doesn’t remain just mine…
+but becomes a shared journey for all of us  🙌</p>
+  <a href="https://www.youtube.com/@mr_yaan_lyon" target="_blank" class="btn" data-text>Subscribe Now</a>
+</section>
+
+<section>
+  <h2 data-text>💖 Support My Travel Journey</h2>
+  <p data-text>Join us on this journey and help make our travels possible Your small contribution can take our big journey further🙏</p>
+  <div class="donation-box">
+    <img src="QR.jpg" alt="QR">
+    <p data-text>Donate via UPI: <b>7060372361.wallet@phonepe</b></p>
+  </div>
+</section>
+
+<section>
+  <button class="btn" id="galleryBtn" data-text>📸 View Gallery</button>
+</section>
+
+<section id="gallerySection">
+  <h2 data-text>🌄 Travel Photo Gallery</h2>
+  <div class="gallery-grid">
+    <img src="1.jpg"><img src="2.jpg"><img src="3.jpg"><img src="4.jpg"><img src="5.jpg">
+    <img src="6.jpg"><img src="7.jpg"><img src="8.jpg"><img src="9.jpg"><img src="10.jpg">
+  </div>
+</section>
+
+<footer data-text>© 2025 My World Travel Journey — Made with ❤️</footer>
+
+<div class="social-box">
+  <h3 data-text>📍 Connect With Me</h3>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/mr__yaan_lyon" target="_blank">📸</a>
+    <a href="https://www.youtube.com/@mr_yaan_lyon" target="_blank">▶️</a>
+    <a href="https://www.facebook.com/share/1AMX1zhUeW/" target="_blank">📘</a>
+    <a href="https://x.com/gun13112911?t=XaK-19q5gVErODI-12u1_w&s=09" target="_blank">🐦</a>
+  </div>
+</div>
+
+<script>
+/* Gallery Toggle */
+const galleryBtn = document.getElementById("galleryBtn");
+const gallerySection = document.getElementById("gallerySection");
+let show = false;
+galleryBtn.onclick = () => {
+  show = !show;
+  gallerySection.style.display = show ? "grid" : "none";
+  galleryBtn.innerText = show ? "🔙 Hide Gallery" : "📸 View Gallery";
+};
+
+/* Translation (Chunked for long text) */
+const langSelect = document.getElementById("lang");
+const dataElements = document.querySelectorAll("[data-text]");
+const originalText = [];
+
+dataElements.forEach(el => originalText.push(el.innerHTML));
+
+langSelect.onchange = async () => {
+  const lang = langSelect.value;
+  if(lang === "en"){
+    dataElements.forEach((el,i)=>el.innerHTML = originalText[i]);
+    return;
+  }
+
+  for(let i=0; i<dataElements.length; i++){
+    const text = originalText[i];
+    const chunkSize = 400; // 400 chars per request
+    const chunks = [];
+
+    for(let j=0; j<text.length; j+=chunkSize){
+      chunks.push(text.substring(j, j+chunkSize));
+    }
+
+    let translatedText = "";
+    for(const chunk of chunks){
+      try {
+        const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(chunk)}&langpair=en|${lang}`);
+        const data = await res.json();
+        translatedText += data.responseData.translatedText;
+      } catch(err){
+        console.error("Translation error:", err);
+        translatedText += chunk;
+      }
+    }
+    dataElements[i].innerHTML = translatedText;
+  }
+};
+</script>
+
+</body>
+</html>
